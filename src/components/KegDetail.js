@@ -13,7 +13,7 @@ function KegDetail(props){
       <p>{keg.alcoholContent}%</p>
       <p>Pints Left: {keg.quantity}</p>
       {keg.quantity > 0 && 
-        <button onclick={() => onClickingBuy(keg.id)}>Sold a pint</button>
+        <button onClick={() => onClickingBuy(keg.id)}>Sold a pint</button>
       }
       {keg.quantity === 0 &&
         <h1>Sorry, no more beer!</h1>
