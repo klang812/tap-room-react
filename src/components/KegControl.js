@@ -31,20 +31,20 @@ class KegControl extends React.Component {
   }
 
   handleRestockingKegs = (id) => {
-    const chosenBeer = this.state.masterKegList.filter(keg => keg.id === id)[0];
-    if (chosenBeer) {
-      const newQuantity = (parseInt(chosenBeer.quantity) + 1);
-      chosenBeer.quantity = newQuantity
-      this.setState({selectedBeer: chosenBeer})
+    const chosenKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    if (chosenKeg) {
+      const newQuantity = (parseInt(chosenKeg.quantity) + 1).toString;
+      chosenKeg.quantity = newQuantity
+      this.setState({selectedKeg: chosenKeg})
     }
   }
 
   handleSellingPints = (id) => {
-    const chosenBeer = this.state.masterKegList.filter(keg => keg.id === id)[0];
-    if (chosenBeer) {
-      const newQuantity = (parseInt(chosenBeer.quantity) - 1);
-      chosenBeer.quantity = newQuantity
-      this.setState({selectedBeer: chosenBeer})
+    const chosenKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    if (chosenKeg) {
+      const newQuantity = (parseInt(chosenKeg.quantity) - 1).toString;
+      chosenKeg.quantity = newQuantity
+      this.setState({selectedKeg: chosenKeg})
     }
   }
 
