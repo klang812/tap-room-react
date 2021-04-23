@@ -8,7 +8,7 @@ function Keg(props) {
         <h3>{props.name}</h3>
         <h5>{props.brand}</h5>
         <p>{props.price}</p>
-        <p>{props.alcoholContect}%</p>
+        <p>{props.alcoholContent}%</p>
         <p>{props.quantity}</p>
       </div>
     </React.Fragment>

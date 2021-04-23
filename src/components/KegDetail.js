@@ -10,7 +10,7 @@ function KegDetail(props){
       <h3>{keg.name}</h3>
       <p>{keg.brand}</p>
       <p>${keg.price}</p>
-      <p>{keg.alcoholContect}%</p>
+      <p>{keg.alcoholContent}%</p>
       <p>Pints Left: {keg.quantity}</p>
       {keg.quantity > 0 && 
         <button onclick={() => onClickingBuy(keg.id)}>Sold a pint</button>
