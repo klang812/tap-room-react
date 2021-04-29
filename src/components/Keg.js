@@ -7,9 +7,11 @@ function Keg(props) {
       <div onClick = {() => props.whenKegClicked(props.id)}>
         <h3>Style: {props.name}</h3>
         <h5>Brewery: {props.brand}</h5>
-        <p>{props.price}</p>
+        <p>${props.price}</p>
         <p>ABV: {props.alcoholContent}%</p>
         <p>Pints Left: {props.quantity}</p>
+        <p><strong>Click here for full details!</strong></p>
+        <hr/>
       </div>
     </React.Fragment>
   );

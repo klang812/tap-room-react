@@ -9,8 +9,8 @@ function EditKegForm (props) {
     event.preventDefault();
     props.onEditKeg({name: event.target.name.value,
                     brand: event.target.brand.value,
-                    price: event.target.brand.value,
-                    alcoholContent: event.target.brand.value,
+                    price: event.target.price.value,
+                    alcoholContent: event.target.alcoholContent.value,
                     quantity: event.target.quantity.value, 
                     id: keg.id});
   }
